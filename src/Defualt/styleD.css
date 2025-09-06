@@ -1,0 +1,424 @@
+/* ============================= */
+/* 🔹 NAVBAR */
+/* ============================= */
+
+/* Logo image styling */
+.navbar-logo {
+  width: 150px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.navbar {
+  max-height: 70px;
+  align-items: center;
+}
+
+/* Custom dark gray background */
+.bg-custom {
+  background-color: rgb(72, 71, 71) !important;
+}
+
+/* Navbar links hover effect */
+.navbar-nav .nav-link:hover {
+  color: orange !important;
+  transition: 0.3s ease;
+}
+
+/* Locked links */
+.navbar-nav .nav-link.locked {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* Sign In button hover */
+.btn-warning:hover {
+  background-color: #e69500 !important;
+  color: white !important;
+}
+
+/* ============================= */
+/* 🔹 CASES SECTION */
+/* ============================= */
+.cases-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url("../assets/crimebg.webp") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cases-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#cases-solved {
+  font-size: 80px;
+  font-weight: bold;
+  color: orange;
+  margin: 0;
+}
+
+.cases-text {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+}
+
+/* ============================= */
+/* 🔹 COMPLAINT SECTION */
+/* ============================= */
+.complaint-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  border-top: 2px solid rgb(109, 13, 13);
+  border-bottom: 2px solid rgb(109, 13, 13);
+  background: linear-gradient(135deg, #d2b48c, #c0a060, #a68a64);
+}
+
+.complaint-box {
+  text-align: center;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid rgb(109, 13, 13);
+}
+
+.complaint-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.complaint-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Locked state */
+.complaint-btn.locked {
+  cursor: not-allowed;
+  background-color: #aaa;
+  position: relative;
+}
+
+/* Tooltip style */
+.complaint-btn.locked:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 5px 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.crime-type {
+  text-align: center;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* ============================= */
+/* 🔹 FOOTER */
+/* ============================= */
+footer.footer {
+  background-color: rgb(60, 6, 6);
+  color: rgb(174, 174, 156);
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: beige;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: beige;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 6px 0;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: rgb(174, 174, 156);
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: beige;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ============================= */
+/* 🔹 ABOUT PAGE */
+/* ============================= */
+body.about-body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: url("../assets/aboutbg.avif") no-repeat center center/cover;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* Optional overlay for readability */
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  z-index: -1;
+}
+/* ============================= */
+/* 🔹 SIGNIN PAGE */
+/* ============================= */
+.signin-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+
+  /* Light brown → beige gradient with your image */
+  background: linear-gradient(135deg, #c2a878, #e6d3a3);
+  background-image: url("../assets/mbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+/* Card container */
+.signin-container {
+  width: 400px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 0.6s ease;
+  opacity: 0.97;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Titles */
+.signin-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #4b3b2b; /* dark brown */
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #c28f3a;
+  box-shadow: 0 0 8px rgba(194, 143, 58, 0.4);
+}
+
+/* Buttons */
+.btn-warning {
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 12px;
+  background: #c28f3a; /* warm brown */
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background: #d9a441; /* lighter beige */
+  transform: translateY(-2px);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #b7791f; /* warm golden brown */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #8c5c12;
+}
+
+/* Spinner */
+#loadingSpinner {
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* ============================= */
+/* 🔹 RESPONSIVENESS */
+/* ============================= */
+@media (max-width: 992px) {
+  #cases-solved {
+    font-size: 60px;
+  }
+  .cases-text {
+    font-size: 20px;
+  }
+  .navbar-logo {
+    width: 120px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    max-height: none;
+  }
+  #cases-solved {
+    font-size: 40px;
+  }
+  .cases-text {
+    font-size: 16px;
+  }
+  .complaint-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .complaint-box {
+    width: 90%;
+    max-width: 300px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .about-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  .signin-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #cases-solved {
+    font-size: 28px;
+  }
+  .cases-text {
+    font-size: 14px;
+  }
+  .complaint-box {
+    width: 100%;
+  }
+  .navbar-logo {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+.btn-link {
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  color: #6c757d; /* soft grey */
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
